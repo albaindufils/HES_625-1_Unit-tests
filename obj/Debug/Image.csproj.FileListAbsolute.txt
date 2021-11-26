@@ -1,0 +1,63 @@
+C:\svn\Image\Image\bin\Debug\Image.exe.config
+C:\svn\Image\Image\obj\Debug\Image.csprojResolveAssemblyReference.cache
+C:\svn\Image\Image\obj\Debug\Image.Form1.resources
+C:\svn\Image\Image\obj\Debug\Image.Properties.Resources.resources
+C:\svn\Image\Image\obj\Debug\Image.csproj.GenerateResource.Cache
+C:\svn\Image\Image\bin\Debug\Image.exe
+C:\svn\Image\Image\bin\Debug\Image.pdb
+C:\svn\Image\Image\obj\Debug\Image.exe
+C:\svn\Image\Image\obj\Debug\Image.pdb
+C:\Users\redbeard\Desktop\Image\Image\Image\bin\Debug\Image.exe.config
+C:\Users\redbeard\Desktop\Image\Image\Image\bin\Debug\Image.exe.manifest
+C:\Users\redbeard\Desktop\Image\Image\Image\bin\Debug\Image.application
+C:\Users\redbeard\Desktop\Image\Image\Image\bin\Debug\Image.exe
+C:\Users\redbeard\Desktop\Image\Image\Image\bin\Debug\Image.pdb
+C:\Users\redbeard\Desktop\Image\Image\Image\obj\Debug\Image.FormImageEdge.resources
+C:\Users\redbeard\Desktop\Image\Image\Image\obj\Debug\Image.Properties.Resources.resources
+C:\Users\redbeard\Desktop\Image\Image\Image\obj\Debug\Image.csproj.GenerateResource.Cache
+C:\Users\redbeard\Desktop\Image\Image\Image\obj\Debug\Image.exe.manifest
+C:\Users\redbeard\Desktop\Image\Image\Image\obj\Debug\Image.application
+C:\Users\redbeard\Desktop\Image\Image\Image\obj\Debug\Image.exe
+C:\Users\redbeard\Desktop\Image\Image\Image\obj\Debug\Image.pdb
+C:\Users\redbeard\Desktop\Image\Image\Image\obj\Debug\Image.csprojResolveAssemblyReference.cache
+C:\svn\EdgeDetection\trunk\bin\Debug\Image.exe.config
+C:\svn\EdgeDetection\trunk\bin\Debug\Image.exe.manifest
+C:\svn\EdgeDetection\trunk\bin\Debug\Image.application
+C:\svn\EdgeDetection\trunk\bin\Debug\Image.exe
+C:\svn\EdgeDetection\trunk\bin\Debug\Image.pdb
+C:\svn\EdgeDetection\trunk\obj\Debug\Image.FormImageEdge.resources
+C:\svn\EdgeDetection\trunk\obj\Debug\Image.Properties.Resources.resources
+C:\svn\EdgeDetection\trunk\obj\Debug\Image.csproj.GenerateResource.Cache
+C:\svn\EdgeDetection\trunk\obj\Debug\Image.exe.manifest
+C:\svn\EdgeDetection\trunk\obj\Debug\Image.application
+C:\svn\EdgeDetection\trunk\obj\Debug\Image.exe
+C:\svn\EdgeDetection\trunk\obj\Debug\Image.pdb
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\EdgeDetection-master\obj\Debug\Image.csproj.AssemblyReference.cache
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\EdgeDetection-master\obj\Debug\Image.FormImageEdge.resources
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\EdgeDetection-master\obj\Debug\Image.Properties.Resources.resources
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\EdgeDetection-master\obj\Debug\Image.csproj.GenerateResource.cache
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\EdgeDetection-master\obj\Debug\Image.csproj.CoreCompileInputs.cache
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\EdgeDetection-master\obj\Debug\Image.exe
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\EdgeDetection-master\obj\Debug\Image.pdb
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\EdgeDetection-master\bin\Debug\Image.exe.config
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\EdgeDetection-master\bin\Debug\Image.exe
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\EdgeDetection-master\bin\Debug\Image.pdb
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\TMP\EdgeDetection-master-21\bin\Debug\Image.exe.config
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\TMP\EdgeDetection-master-21\bin\Debug\Image.exe
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\TMP\EdgeDetection-master-21\bin\Debug\Image.pdb
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\TMP\EdgeDetection-master-21\obj\Debug\Image.FormImageEdge.resources
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\TMP\EdgeDetection-master-21\obj\Debug\Image.Properties.Resources.resources
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\TMP\EdgeDetection-master-21\obj\Debug\Image.csproj.GenerateResource.cache
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\TMP\EdgeDetection-master-21\obj\Debug\Image.csproj.CoreCompileInputs.cache
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\TMP\EdgeDetection-master-21\obj\Debug\Image.exe
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\TMP\EdgeDetection-master-21\obj\Debug\Image.pdb
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\obj\Debug\Image.csproj.AssemblyReference.cache
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\obj\Debug\Image.FormImageEdge.resources
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\obj\Debug\Image.Properties.Resources.resources
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\obj\Debug\Image.csproj.GenerateResource.cache
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\obj\Debug\Image.csproj.CoreCompileInputs.cache
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\obj\Debug\Image.exe
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\obj\Debug\Image.pdb
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\bin\Debug\Image.exe.config
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\bin\Debug\Image.exe
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\bin\Debug\Image.pdb
