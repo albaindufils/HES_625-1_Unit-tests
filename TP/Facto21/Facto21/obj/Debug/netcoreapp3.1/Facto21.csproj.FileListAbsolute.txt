@@ -1,0 +1,14 @@
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\bin\Debug\netcoreapp3.1\Facto21.exe
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\bin\Debug\netcoreapp3.1\Facto21.deps.json
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\bin\Debug\netcoreapp3.1\Facto21.runtimeconfig.json
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\bin\Debug\netcoreapp3.1\Facto21.runtimeconfig.dev.json
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\bin\Debug\netcoreapp3.1\Facto21.dll
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\bin\Debug\netcoreapp3.1\Facto21.pdb
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\obj\Debug\netcoreapp3.1\Facto21.csproj.AssemblyReference.cache
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\obj\Debug\netcoreapp3.1\Facto21.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\obj\Debug\netcoreapp3.1\Facto21.AssemblyInfoInputs.cache
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\obj\Debug\netcoreapp3.1\Facto21.AssemblyInfo.cs
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\obj\Debug\netcoreapp3.1\Facto21.csproj.CoreCompileInputs.cache
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\obj\Debug\netcoreapp3.1\Facto21.dll
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\obj\Debug\netcoreapp3.1\Facto21.pdb
+C:\Users\doms\Documents\Visual Studio 2019\Projects21\facto21\Facto21\Facto21\obj\Debug\netcoreapp3.1\Facto21.genruntimeconfig.cache

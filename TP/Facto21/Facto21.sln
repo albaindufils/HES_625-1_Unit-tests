@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facto21", "Facto21\Facto21.csproj", "{4665E987-D33C-44D6-836E-05E78FDBDA94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facto21Test", "Facto21Test\Facto21Test.csproj", "{4868FC9B-E52C-4D4D-A878-28D4BE3361E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4665E987-D33C-44D6-836E-05E78FDBDA94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4665E987-D33C-44D6-836E-05E78FDBDA94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4665E987-D33C-44D6-836E-05E78FDBDA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4665E987-D33C-44D6-836E-05E78FDBDA94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4868FC9B-E52C-4D4D-A878-28D4BE3361E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4868FC9B-E52C-4D4D-A878-28D4BE3361E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4868FC9B-E52C-4D4D-A878-28D4BE3361E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4868FC9B-E52C-4D4D-A878-28D4BE3361E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {350686B4-17AB-4574-94F4-E14671A338E8}
+	EndGlobalSection
+EndGlobal
