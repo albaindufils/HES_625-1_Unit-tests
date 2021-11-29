@@ -81,11 +81,15 @@ namespace Image.Classes
                 for (int x = 0; x < temp.Width; x++)
                 {
                     c = temp.GetPixel(x, y);
-                    rgb = (int)((c.R + c.G + c.B) / 3);
+                    rgb = GetBlackRgbCalculed(c);
                     temp.SetPixel(x, y, Color.FromArgb(rgb, rgb, rgb));
                 }
             return temp;
 
+        }
+        public static int GetBlackRgbCalculed(Color c)
+        {
+            return (int)((c.R + c.G + c.B) / 3);
         }
 
         //apply color filter to swap pixel colors
@@ -100,12 +104,17 @@ namespace Image.Classes
                 for (int x = 0; x < bmp.Height; x++)
                 {
                     Color c = bmp.GetPixel(i, x);
-                    Color cLayer = Color.FromArgb(c.A, c.G, c.B, c.R);
+                    Color cLayer = GetColorSwaped(c);
                     temp.SetPixel(i, x, cLayer);
                 }
 
             }
             return temp;
+        }
+
+        public static Color GetColorSwaped(Color c)
+        {
+            return Color.FromArgb(c.A, c.G, c.B, c.R);
         }
 
         //apply color filter to swap pixel colors
