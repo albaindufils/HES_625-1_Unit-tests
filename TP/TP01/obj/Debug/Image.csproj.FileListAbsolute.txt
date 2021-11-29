@@ -61,3 +61,13 @@ D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_
 D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\bin\Debug\Image.exe.config
 D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\bin\Debug\Image.exe
 D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\bin\Debug\Image.pdb
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\TP\TP01\obj\Debug\Image.FormImageEdge.resources
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\TP\TP01\obj\Debug\Image.Properties.Resources.resources
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\TP\TP01\obj\Debug\Image.csproj.GenerateResource.cache
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\TP\TP01\obj\Debug\Image.csproj.CoreCompileInputs.cache
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\TP\TP01\obj\Debug\Image.exe
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\TP\TP01\obj\Debug\Image.pdb
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\TP\TP01\bin\Debug\Image.exe.config
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\TP\TP01\bin\Debug\Image.exe
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\TP\TP01\bin\Debug\Image.pdb
+D:\Cours\7eme semestre\625_1_Software\Software Test\TP_01\G16_AlbainD_MatthieuR_607-3_TP1\TP\TP01\obj\Debug\Image.csproj.AssemblyReference.cache

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Image
 {
-    public class FilterMatrix
+    public class FilterEdgerMatrix
     {
         public static double[,] Laplacian3x3
         {

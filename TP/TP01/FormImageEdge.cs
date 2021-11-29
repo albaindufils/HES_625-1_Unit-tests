@@ -232,86 +232,86 @@ namespace Image
             switch (xfilter)
 	        {
                 case "Laplacian3x3":
-                    xFilterMatrix = FilterMatrix.Laplacian3x3;
+                    xFilterMatrix = FilterEdgerMatrix.Laplacian3x3;
                     break;
                 case "Laplacian5x5":
-                    xFilterMatrix = FilterMatrix.Laplacian5x5;
+                    xFilterMatrix = FilterEdgerMatrix.Laplacian5x5;
                     break;
                 case "LaplacianOfGaussian":
-                    xFilterMatrix = FilterMatrix.LaplacianOfGaussian;
+                    xFilterMatrix = FilterEdgerMatrix.LaplacianOfGaussian;
                     break;
                 case "Gaussian3x3":
-                    xFilterMatrix = FilterMatrix.Gaussian3x3;
+                    xFilterMatrix = FilterEdgerMatrix.Gaussian3x3;
                     break;
                 case "Gaussian5x5Type1":
-                    xFilterMatrix = FilterMatrix.Gaussian5x5Type1;
+                    xFilterMatrix = FilterEdgerMatrix.Gaussian5x5Type1;
                     break;
                 case "Gaussian5x5Type2":
-                    xFilterMatrix = FilterMatrix.Gaussian5x5Type2;
+                    xFilterMatrix = FilterEdgerMatrix.Gaussian5x5Type2;
                     break;
                 case "Sobel3x3Horizontal":
-                    xFilterMatrix = FilterMatrix.Sobel3x3Horizontal;
+                    xFilterMatrix = FilterEdgerMatrix.Sobel3x3Horizontal;
                     break;
                 case "Sobel3x3Vertical":
-                    xFilterMatrix = FilterMatrix.Sobel3x3Vertical;
+                    xFilterMatrix = FilterEdgerMatrix.Sobel3x3Vertical;
                     break;
                 case "Prewitt3x3Horizontal":
-                    xFilterMatrix = FilterMatrix.Prewitt3x3Horizontal;
+                    xFilterMatrix = FilterEdgerMatrix.Prewitt3x3Horizontal;
                     break;
                 case "Prewitt3x3Vertical":
-                    xFilterMatrix = FilterMatrix.Prewitt3x3Vertical;
+                    xFilterMatrix = FilterEdgerMatrix.Prewitt3x3Vertical;
                     break;
                 case "Kirsch3x3Horizontal":
-                    xFilterMatrix = FilterMatrix.Kirsch3x3Horizontal;
+                    xFilterMatrix = FilterEdgerMatrix.Kirsch3x3Horizontal;
                     break;
                 case "Kirsch3x3Vertical":
-                    xFilterMatrix = FilterMatrix.Kirsch3x3Vertical;
+                    xFilterMatrix = FilterEdgerMatrix.Kirsch3x3Vertical;
                     break;
                 default:
-                    xFilterMatrix = FilterMatrix.Laplacian3x3;
+                    xFilterMatrix = FilterEdgerMatrix.Laplacian3x3;
                     break;
 	        }
             
             switch (yfilter)
 	        {
                 case "Laplacian3x3":
-                    yFilterMatrix = FilterMatrix.Laplacian3x3;
+                    yFilterMatrix = FilterEdgerMatrix.Laplacian3x3;
                     break;
                 case "Laplacian5x5":
-                    yFilterMatrix = FilterMatrix.Laplacian5x5;
+                    yFilterMatrix = FilterEdgerMatrix.Laplacian5x5;
                     break;
                 case "LaplacianOfGaussian":
-                    yFilterMatrix = FilterMatrix.LaplacianOfGaussian;
+                    yFilterMatrix = FilterEdgerMatrix.LaplacianOfGaussian;
                     break;
                 case "Gaussian3x3":
-                    yFilterMatrix = FilterMatrix.Gaussian3x3;
+                    yFilterMatrix = FilterEdgerMatrix.Gaussian3x3;
                     break;
                 case "Gaussian5x5Type1":
-                    yFilterMatrix = FilterMatrix.Gaussian5x5Type1;
+                    yFilterMatrix = FilterEdgerMatrix.Gaussian5x5Type1;
                     break;
                 case "Gaussian5x5Type2":
-                    yFilterMatrix = FilterMatrix.Gaussian5x5Type2;
+                    yFilterMatrix = FilterEdgerMatrix.Gaussian5x5Type2;
                     break;
                 case "Sobel3x3Horizontal":
-                    yFilterMatrix = FilterMatrix.Sobel3x3Horizontal;
+                    yFilterMatrix = FilterEdgerMatrix.Sobel3x3Horizontal;
                     break;
                 case "Sobel3x3Vertical":
-                    yFilterMatrix = FilterMatrix.Sobel3x3Vertical;
+                    yFilterMatrix = FilterEdgerMatrix.Sobel3x3Vertical;
                     break;
                 case "Prewitt3x3Horizontal":
-                    yFilterMatrix = FilterMatrix.Prewitt3x3Horizontal;
+                    yFilterMatrix = FilterEdgerMatrix.Prewitt3x3Horizontal;
                     break;
                 case "Prewitt3x3Vertical":
-                    yFilterMatrix = FilterMatrix.Prewitt3x3Vertical;
+                    yFilterMatrix = FilterEdgerMatrix.Prewitt3x3Vertical;
                     break;
                 case "Kirsch3x3Horizontal":
-                    yFilterMatrix = FilterMatrix.Kirsch3x3Horizontal;
+                    yFilterMatrix = FilterEdgerMatrix.Kirsch3x3Horizontal;
                     break;
                 case "Kirsch3x3Vertical":
-                    yFilterMatrix = FilterMatrix.Kirsch3x3Vertical;
+                    yFilterMatrix = FilterEdgerMatrix.Kirsch3x3Vertical;
                     break;
                 default:
-                    yFilterMatrix = FilterMatrix.Laplacian3x3;
+                    yFilterMatrix = FilterEdgerMatrix.Laplacian3x3;
                     break;
 	        }
 
