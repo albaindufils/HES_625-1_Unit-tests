@@ -1,17 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using System.Diagnostics;
 using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
-using System.Windows.Forms.DataVisualization.Charting;
+using ImageUtils;
 using Image.Classes;
 
 //My take on and implementation of http://www.getcodesamples.com/src/25E5A923
@@ -33,11 +27,12 @@ namespace Image
             listBoxXEdgeFilter.SelectedIndex = 0;
 
         }
+        
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            originalBitmap = new Bitmap(Image.Properties.Resources.sassafras);
+            originalBitmap = new Bitmap(Properties.Resources.sassafras);
             pictureBoxPreview.Image = originalBitmap;
 
             if (originalBitmap == null)
@@ -74,12 +69,10 @@ namespace Image
             OpenFileDialog.Title = "Select image ";
             OpenFileDialog.Filter = "Jpeg Images(*.jpg)|*.jpg|Png Images(*.png)|*.png|Bitmap Images(*.bmp)|*.bmp";
 
-            if (OpenFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (OpenFileDialog.ShowDialog() == DialogResult.OK)
             {
-                StreamReader streamReader = new StreamReader(OpenFileDialog.FileName);
-                originalBitmap = new Bitmap(streamReader.BaseStream);
+                originalBitmap = Tool.LoadImage(OpenFileDialog.FileName);
                 pictureBoxPreview.Image = originalBitmap;
-                streamReader.Close();
 
                 if (originalBitmap == null)
                 {
@@ -87,7 +80,6 @@ namespace Image
                     label7.Visible = false;
                     previewBitmap = null;
                 }
-
                 previewBitmap = originalBitmap;
 
                 filtersElementIsVisible();
@@ -470,7 +462,7 @@ namespace Image
             System.Drawing.Size size = new System.Drawing.Size(width, height);
             Bitmap bitmapIMG = new Bitmap(pictureBoxResult.Image, width, height);
 
-            List<Image.coord> coorArray = new List<Image.coord>();
+            List<Coordinate> coorArray = new List<Coordinate>();
 
             int x = 0;
             int y = 0;

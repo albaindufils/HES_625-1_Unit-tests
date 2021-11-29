@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31829.152
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Image", "Image.csproj", "{69B55000-63E7-4087-B7EE-7A1014D4C103}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP2_ImageTest", "..\TP2_ImageTest\TP2_ImageTest.csproj", "{7CC6B8EB-EFD5-401F-899E-EC5CE316928C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TP2_ImageTest", "..\TP2_ImageTest\TP2_ImageTest.csproj", "{7CC6B8EB-EFD5-401F-899E-EC5CE316928C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
