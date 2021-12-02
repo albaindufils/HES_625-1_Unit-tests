@@ -45,14 +45,14 @@ namespace TP2_ImageTest
         [TestMethod]
         public void TestDefaultImageWithSobel3x3EgdeFilter()
         {
-            TestDefaultImageWithAnEdgeFilter("Sobel3x3", Properties.Resources.sobel3x3horizontal_leaf);
+            TestDefaultImageWithAnEdgeFilter("Sobel3x3Horizontal", Properties.Resources.sobel3x3horizontal_leaf);
             Assert.AreEqual(FilterEdgeMatrix.Sobel3x3Horizontal.Length, 9);
         }
 
         [TestMethod]
         public void TestDefaultImageWithPrewitt3x3EgdeFilter()
         {
-            TestDefaultImageWithAnEdgeFilter("Prewitt3x3", Properties.Resources.prewitt3x3horizontal_leaf);
+            TestDefaultImageWithAnEdgeFilter("Prewitt3x3Horizontal", Properties.Resources.prewitt3x3horizontal_leaf);
             Assert.AreEqual(FilterEdgeMatrix.Prewitt3x3Horizontal.Length, 9);
 
         }

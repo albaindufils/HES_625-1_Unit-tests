@@ -163,22 +163,15 @@ namespace Image
                 {
                     if (cmbApplyFilter.SelectedItem.ToString() == "None")
                         resultBitmap = selectedSource;
-                    else if (cmbApplyFilter.SelectedItem.ToString() == "Mia Filter")
-                        resultBitmap = selectedSource.ApplyMiaFilter();
-                    else if (cmbApplyFilter.SelectedItem.ToString() == "One Filter")
-                        resultBitmap = selectedSource.ApplyOneFilter();
-                    else if (cmbApplyFilter.SelectedItem.ToString() == "Rainbow Filter")
-                        resultBitmap = selectedSource.ApplyRainbowFilter();
                     else if (cmbApplyFilter.SelectedItem.ToString() == "Black'n White Filter")
                         resultBitmap = selectedSource.BlackWhite();
                     else if (cmbApplyFilter.SelectedItem.ToString() == "Swap Filter")
                         resultBitmap = selectedSource.ApplyFilterSwap();
-                    else if (cmbApplyFilter.SelectedItem.ToString() == "Swap Filter Divide")
-                        resultBitmap = selectedSource.ApplyFilterSwapDivide();
                     else if (cmbApplyFilter.SelectedItem.ToString() == "Mega Green Filter")
                         resultBitmap = selectedSource.ApplyFilterMegaGreen();
                     else if (cmbApplyFilter.SelectedItem.ToString() == "Mega Blue Filter")
                         resultBitmap = selectedSource.ApplyFilterMegaBlue();
+ 
 
                     pictureBoxResult.Image = resultBitmap;
                     isActivatedEdgeDetection(true);
