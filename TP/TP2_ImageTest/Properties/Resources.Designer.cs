@@ -73,9 +73,39 @@ namespace TP2_ImageTest.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap laplacian3x3_leaf {
+            get {
+                object obj = ResourceManager.GetObject("laplacian3x3_leaf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap leaf {
             get {
                 object obj = ResourceManager.GetObject("leaf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap prewitt3x3horizontal_leaf {
+            get {
+                object obj = ResourceManager.GetObject("prewitt3x3horizontal_leaf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap sobel3x3horizontal_leaf {
+            get {
+                object obj = ResourceManager.GetObject("sobel3x3horizontal_leaf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

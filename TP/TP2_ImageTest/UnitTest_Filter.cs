@@ -9,10 +9,20 @@ namespace TP2_ImageTest
     public class UnitTest_Filter
     {
         Bitmap originalImage;
-        public UnitTest_Filter()
+        int NUMBER_PIXEL_TEST = 1000;
+
+        [TestCleanup]
+        public void FilterTestCleanup ()
+        {
+            originalImage = null;
+        }
+
+        [TestInitialize]
+        public void FilterTestInitilize()
         {
             originalImage = new Bitmap(Properties.Resources.leaf);
         }
+
 
         [TestMethod]
         public void TestDefaultImageProperties()
@@ -31,8 +41,8 @@ namespace TP2_ImageTest
         public void TestDefaultImageWithBlackAndWhiteFilter()
         {
             Console.WriteLine("TestDefaultImageWithBlackAndWhiteFilter");
-            Bitmap defaultBlackWhiteImage = new Bitmap(Properties.Resources.black_white_leaf);
 
+            Bitmap defaultBlackWhiteImage = new Bitmap(Properties.Resources.black_white_leaf);
             Bitmap blackWhiteImage = FilterMatrix.BlackWhite(originalImage);
 
             Assert.IsNotNull(blackWhiteImage);
@@ -42,7 +52,9 @@ namespace TP2_ImageTest
             Assert.AreEqual(defaultBlackWhiteImage.GetType(), blackWhiteImage.GetType());
 
             Random rnd = new Random();
-            for (int i = 0; i < 10; i++)
+
+            // Control x pixels randomly
+            for (int i = 0; i < NUMBER_PIXEL_TEST; i++)
             {
                 // Random pixel X and Y
                 var randX = rnd.Next(1, blackWhiteImage.Width - 1);
@@ -69,28 +81,25 @@ namespace TP2_ImageTest
             Console.WriteLine("TestDefaultImageWithBlackAndWhiteFilter");
             Bitmap defaultSwapImage = new Bitmap(Properties.Resources.swap_leaf);
 
+            // Apply filter Swap
             Bitmap swapImage = FilterMatrix.ApplyFilterSwap(originalImage);
 
             Assert.IsNotNull(swapImage);
             Assert.IsNotNull(defaultSwapImage);
+            
 
             Assert.AreEqual(defaultSwapImage.Size, swapImage.Size);
             Assert.AreEqual(defaultSwapImage.GetType(), swapImage.GetType());
             Random rnd = new Random();
-            for (int i = 0; i < 10; i++)
+
+            // Control x pixels randomly
+            for (int i = 0; i < NUMBER_PIXEL_TEST; i++)
             {
                 var randX = rnd.Next(1, swapImage.Width - 1);
                 var randY = rnd.Next(1, swapImage.Height - 1);
                 Console.WriteLine("Test for pixel x: " + randX + ", y: " + randY);
-                originalImage.SetPixel(randX, randY, FilterMatrix.GetColorSwaped(originalImage.GetPixel(randX, randY)));
-
-                var pixelSwappedImage = swapImage.GetPixel(randX, randY);
-
-                // Test image generated with originalImage modified on the fly
-                Assert.AreEqual(pixelSwappedImage, originalImage.GetPixel(randX, randY));
-
                 // Test image generated with manually generated B&W
-                Assert.AreEqual(pixelSwappedImage, defaultSwapImage.GetPixel(randX, randY));
+                Assert.AreEqual(swapImage.GetPixel(randX, randY), defaultSwapImage.GetPixel(randX, randY));
             }
         }
     }

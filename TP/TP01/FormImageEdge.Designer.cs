@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.buttonTest = new System.Windows.Forms.Button();
             this.pictureBoxPreview = new System.Windows.Forms.PictureBox();
             this.listBoxYEdgeFilter = new System.Windows.Forms.ListBox();
@@ -85,13 +85,8 @@
             this.listBoxYEdgeFilter.Items.AddRange(new object[] {
             "",
             "Laplacian3x3",
-            "Laplacian5x5",
             "Sobel3x3Horizontal",
-            "Sobel3x3Vertical",
-            "Prewitt3x3Horizontal",
-            "Prewitt3x3Vertical",
-            "Kirsch3x3Horizontal",
-            "Kirsch3x3Vertical"});
+            "Prewitt3x3Horizontal"});
             this.listBoxYEdgeFilter.Location = new System.Drawing.Point(586, 402);
             this.listBoxYEdgeFilter.Name = "listBoxYEdgeFilter";
             this.listBoxYEdgeFilter.Size = new System.Drawing.Size(120, 95);
@@ -103,13 +98,8 @@
             this.listBoxXEdgeFilter.Items.AddRange(new object[] {
             "",
             "Laplacian3x3",
-            "Laplacian5x5",
             "Sobel3x3Horizontal",
-            "Sobel3x3Vertical",
-            "Prewitt3x3Horizontal",
-            "Prewitt3x3Vertical",
-            "Kirsch3x3Horizontal",
-            "Kirsch3x3Vertical"});
+            "Prewitt3x3Horizontal"});
             this.listBoxXEdgeFilter.Location = new System.Drawing.Point(440, 402);
             this.listBoxXEdgeFilter.Name = "listBoxXEdgeFilter";
             this.listBoxXEdgeFilter.Size = new System.Drawing.Size(120, 95);
@@ -253,16 +243,16 @@
             // 
             // chartarea
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chartarea.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartarea.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chartarea.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartarea.Legends.Add(legend2);
             this.chartarea.Location = new System.Drawing.Point(13, 13);
             this.chartarea.Name = "chartarea";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartarea.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chartarea.Series.Add(series2);
             this.chartarea.Size = new System.Drawing.Size(36, 32);
             this.chartarea.TabIndex = 21;
             this.chartarea.Text = "Chart Area";
@@ -276,12 +266,8 @@
             this.cmbApplyFilter.Items.AddRange(new object[] {
             "Select one filter type",
             "None",
-            "Mia Filter",
-            "One Filter",
-            "Rainbow Filter",
             "Black\'n White Filter",
             "Swapp Filter",
-            "Swap Filter Divide",
             "Mega Green Filter",
             "Mega Blue Filter"});
             this.cmbApplyFilter.Location = new System.Drawing.Point(125, 436);
@@ -295,7 +281,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(95, 413);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.Size = new System.Drawing.Size(135, 13);
             this.label7.TabIndex = 23;
             this.label7.Text = "You can superpose 3 filters";
             // 

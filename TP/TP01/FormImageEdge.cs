@@ -7,6 +7,7 @@ using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 using ImageUtils;
 using Image.Classes;
+using Image;
 
 //My take on and implementation of http://www.getcodesamples.com/src/25E5A923
 namespace Image
@@ -108,19 +109,25 @@ namespace Image
         private void buttonApplyEdgeFilters_Click(object sender, EventArgs e)
         {
 
-                if (listBoxYEdgeFilter.SelectedItem.ToString().Length > 0 && listBoxYEdgeFilter.SelectedItem.ToString().Length > 0)
-                {
+            if (listBoxYEdgeFilter.SelectedItem.ToString().Length > 0 && listBoxYEdgeFilter.SelectedItem.ToString().Length > 0)
+            {
                 cmbApplyFilter.Visible= false;
-                edgeFilter(listBoxYEdgeFilter.SelectedItem.ToString(), listBoxYEdgeFilter.SelectedItem.ToString());
-                ConvertToXYCoord(pictureBoxResult);
-
-
+                Bitmap tmp = FilterEdgeMatrix.EdgeFilter(new Bitmap(pictureBoxResult.Image), listBoxYEdgeFilter.SelectedItem.ToString(), listBoxYEdgeFilter.SelectedItem.ToString(), Convert.ToInt32(trackBarThreshold.Value));
+                if(tmp != null )
+                {
+                    pictureBoxResult.Image = tmp;
+                    resultBitmap = tmp;
+                    ConvertToXYCoord(pictureBoxResult);
+                } else
+                {
+                    labelErrors.Text = "Error found with edge";
+                }
+                
             }
             else
-                {
-                    labelErrors.Text = "2 edge filters must be selected";
-                }
-            
+            {
+                labelErrors.Text = "2 edge filters must be selected";
+            }
         }
 
 
@@ -164,7 +171,7 @@ namespace Image
                         resultBitmap = selectedSource.ApplyRainbowFilter();
                     else if (cmbApplyFilter.SelectedItem.ToString() == "Black'n White Filter")
                         resultBitmap = selectedSource.BlackWhite();
-                    else if (cmbApplyFilter.SelectedItem.ToString() == "Swapp Filter")
+                    else if (cmbApplyFilter.SelectedItem.ToString() == "Swap Filter")
                         resultBitmap = selectedSource.ApplyFilterSwap();
                     else if (cmbApplyFilter.SelectedItem.ToString() == "Swap Filter Divide")
                         resultBitmap = selectedSource.ApplyFilterSwapDivide();
@@ -217,242 +224,7 @@ namespace Image
         /// </summary>
         /// <param name="xfilter"></param>
         /// <param name="yfilter"></param>
-        public void edgeFilter(string xfilter, string yfilter)
-        {
-            double[,] xFilterMatrix;
-            double[,] yFilterMatrix;
-            switch (xfilter)
-	        {
-                case "Laplacian3x3":
-                    xFilterMatrix = FilterMatrix.Laplacian3x3;
-                    break;
-                case "Laplacian5x5":
-                    xFilterMatrix = FilterMatrix.Laplacian5x5;
-                    break;
-                case "LaplacianOfGaussian":
-                    xFilterMatrix = FilterMatrix.LaplacianOfGaussian;
-                    break;
-                case "Gaussian3x3":
-                    xFilterMatrix = FilterMatrix.Gaussian3x3;
-                    break;
-                case "Gaussian5x5Type1":
-                    xFilterMatrix = FilterMatrix.Gaussian5x5Type1;
-                    break;
-                case "Gaussian5x5Type2":
-                    xFilterMatrix = FilterMatrix.Gaussian5x5Type2;
-                    break;
-                case "Sobel3x3Horizontal":
-                    xFilterMatrix = FilterMatrix.Sobel3x3Horizontal;
-                    break;
-                case "Sobel3x3Vertical":
-                    xFilterMatrix = FilterMatrix.Sobel3x3Vertical;
-                    break;
-                case "Prewitt3x3Horizontal":
-                    xFilterMatrix = FilterMatrix.Prewitt3x3Horizontal;
-                    break;
-                case "Prewitt3x3Vertical":
-                    xFilterMatrix = FilterMatrix.Prewitt3x3Vertical;
-                    break;
-                case "Kirsch3x3Horizontal":
-                    xFilterMatrix = FilterMatrix.Kirsch3x3Horizontal;
-                    break;
-                case "Kirsch3x3Vertical":
-                    xFilterMatrix = FilterMatrix.Kirsch3x3Vertical;
-                    break;
-                default:
-                    xFilterMatrix = FilterMatrix.Laplacian3x3;
-                    break;
-	        }
-            
-            switch (yfilter)
-	        {
-                case "Laplacian3x3":
-                    yFilterMatrix = FilterMatrix.Laplacian3x3;
-                    break;
-                case "Laplacian5x5":
-                    yFilterMatrix = FilterMatrix.Laplacian5x5;
-                    break;
-                case "LaplacianOfGaussian":
-                    yFilterMatrix = FilterMatrix.LaplacianOfGaussian;
-                    break;
-                case "Gaussian3x3":
-                    yFilterMatrix = FilterMatrix.Gaussian3x3;
-                    break;
-                case "Gaussian5x5Type1":
-                    yFilterMatrix = FilterMatrix.Gaussian5x5Type1;
-                    break;
-                case "Gaussian5x5Type2":
-                    yFilterMatrix = FilterMatrix.Gaussian5x5Type2;
-                    break;
-                case "Sobel3x3Horizontal":
-                    yFilterMatrix = FilterMatrix.Sobel3x3Horizontal;
-                    break;
-                case "Sobel3x3Vertical":
-                    yFilterMatrix = FilterMatrix.Sobel3x3Vertical;
-                    break;
-                case "Prewitt3x3Horizontal":
-                    yFilterMatrix = FilterMatrix.Prewitt3x3Horizontal;
-                    break;
-                case "Prewitt3x3Vertical":
-                    yFilterMatrix = FilterMatrix.Prewitt3x3Vertical;
-                    break;
-                case "Kirsch3x3Horizontal":
-                    yFilterMatrix = FilterMatrix.Kirsch3x3Horizontal;
-                    break;
-                case "Kirsch3x3Vertical":
-                    yFilterMatrix = FilterMatrix.Kirsch3x3Vertical;
-                    break;
-                default:
-                    yFilterMatrix = FilterMatrix.Laplacian3x3;
-                    break;
-	        }
-
-            if (pictureBoxPreview.Image.Size.Height > 0)
-            {
-                Bitmap newbitmap = new Bitmap(pictureBoxPreview.Image);
-                BitmapData newbitmapData = new BitmapData();
-                newbitmapData = newbitmap.LockBits(new Rectangle(0, 0, newbitmap.Width, newbitmap.Height), ImageLockMode.ReadOnly, PixelFormat.Format32bppPArgb);
-
-                byte[] pixelbuff = new byte[newbitmapData.Stride * newbitmapData.Height];
-                byte[] resultbuff = new byte[newbitmapData.Stride * newbitmapData.Height];
-
-                Marshal.Copy(newbitmapData.Scan0, pixelbuff, 0, pixelbuff.Length);
-                newbitmap.UnlockBits(newbitmapData);
-
-                double blue = 0.0;
-                double green = 0.0;
-                double red = 0.0;
-
-                double blueX = 0.0;
-                double greenX = 0.0;
-                double redX = 0.0;
-
-                double blueY = 0.0;
-                double greenY = 0.0;
-                double redY = 0.0;
-
-                double blueTotal = 0.0;
-                double greenTotal = 0.0;
-                double redTotal = 0.0;
-
-                int filterOffset = 1;
-                int calcOffset = 0;
-
-                int byteOffset = 0;
-
-                for (int offsetY = filterOffset; offsetY <
-                    newbitmap.Height - filterOffset; offsetY++)
-                {
-                    for (int offsetX = filterOffset; offsetX <
-                        newbitmap.Width - filterOffset; offsetX++)
-                    {
-                        blueX = greenX = redX = 0;
-                        blueY = greenY = redY = 0;
-
-                        blueTotal = greenTotal = redTotal = 0.0;
-
-                        byteOffset = offsetY *
-                                     newbitmapData.Stride +
-                                     offsetX * 4;
-
-                        for (int filterY = -filterOffset;
-                            filterY <= filterOffset; filterY++)
-                        {
-                            for (int filterX = -filterOffset;
-                                filterX <= filterOffset; filterX++)
-                            {
-                                calcOffset = byteOffset +
-                                             (filterX * 4) +
-                                             (filterY * newbitmapData.Stride);
-
-                                blueX += (double)(pixelbuff[calcOffset]) *
-                                          xFilterMatrix[filterY + filterOffset,
-                                                  filterX + filterOffset];
-
-                                greenX += (double)(pixelbuff[calcOffset + 1]) *
-                                          xFilterMatrix[filterY + filterOffset,
-                                                  filterX + filterOffset];
-
-                                redX += (double)(pixelbuff[calcOffset + 2]) *
-                                          xFilterMatrix[filterY + filterOffset,
-                                                  filterX + filterOffset];
-
-                                blueY += (double)(pixelbuff[calcOffset]) *
-                                          yFilterMatrix[filterY + filterOffset,
-                                                  filterX + filterOffset];
-
-                                greenY += (double)(pixelbuff[calcOffset + 1]) *
-                                          yFilterMatrix[filterY + filterOffset,
-                                                  filterX + filterOffset];
-
-                                redY += (double)(pixelbuff[calcOffset + 2]) *
-                                          yFilterMatrix[filterY + filterOffset,
-                                                  filterX + filterOffset];
-                            }
-                        }
-
-                        //blueTotal = Math.Sqrt((blueX * blueX) + (blueY * blueY));
-                        blueTotal = 0;
-                        greenTotal = Math.Sqrt((greenX * greenX) + (greenY * greenY));
-                        //redTotal = Math.Sqrt((redX * redX) + (redY * redY));
-                        redTotal = 0;
-
-                        if (blueTotal > 255)
-                        { blueTotal = 255; }
-                        else if (blueTotal < 0)
-                        { blueTotal = 0; }
-
-                        if (greenTotal > 255)
-                        { greenTotal = 255; }
-                        else if (greenTotal < 0)
-                        { greenTotal = 0; }
-
-                        try
-                        {
-                            if (greenTotal < Convert.ToInt32(trackBarThreshold.Value))
-                            {
-                                greenTotal = 0;
-                            }
-                            else
-                            {
-                                greenTotal = 255;
-                            }
-                        }
-                        catch (Exception)
-                        {
-                            
-                            throw;
-                        }
-                        
-
-                        if (redTotal > 255)
-                        { redTotal = 255; }
-                        else if (redTotal < 0)
-                        { redTotal = 0; }
-
-                        resultbuff[byteOffset] = (byte)(blueTotal);
-                        resultbuff[byteOffset + 1] = (byte)(greenTotal);
-                        resultbuff[byteOffset + 2] = (byte)(redTotal);
-                        resultbuff[byteOffset + 3] = 255;
-                    }
-                }
-
-                Bitmap resultbitmap = new Bitmap(newbitmap.Width, newbitmap.Height);
-
-                BitmapData resultData = resultbitmap.LockBits(new Rectangle(0, 0,
-                                         resultbitmap.Width, resultbitmap.Height),
-                                                          ImageLockMode.WriteOnly,
-                                                      PixelFormat.Format32bppArgb);
-
-                Marshal.Copy(resultbuff, 0, resultData.Scan0, resultbuff.Length);
-                resultbitmap.UnlockBits(resultData);
-                pictureBoxResult.Image = resultbitmap;
-            }
-            else
-            {
-                labelErrors.Text = "You must load an image";
-            }
-        }
+       
 
         public void ConvertToXYCoord(PictureBox pictureBoxelem)
         {
@@ -502,7 +274,7 @@ namespace Image
                 sfd.Filter = "Png Images(*.png)|*.png|Jpeg Images(*.jpg)|*.jpg";
                 sfd.Filter += "|Bitmap Images(*.bmp)|*.bmp";
 
-                if (sfd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                if (sfd.ShowDialog() == DialogResult.OK)
                 {
                     string fileExtension = Path.GetExtension(sfd.FileName).ToUpper();
                     ImageFormat imgFormat = ImageFormat.Png;
