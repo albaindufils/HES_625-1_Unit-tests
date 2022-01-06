@@ -1,14 +1,14 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\00_REPOSITORY\\HES\\HES_625-1_Unit-tests\\TP\\TP2_ImageTest\\TP2_ImageTest.csproj": {}
+    "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\TP2_ImageTest\\TP2_ImageTest.csproj": {}
   },
   "projects": {
-    "Z:\\00_REPOSITORY\\HES\\HES_625-1_Unit-tests\\TP\\TP01\\Image.csproj": {
+    "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\TP01\\Image.csproj": {
       "restore": {
-        "projectUniqueName": "Z:\\00_REPOSITORY\\HES\\HES_625-1_Unit-tests\\TP\\TP01\\Image.csproj",
+        "projectUniqueName": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\TP01\\Image.csproj",
         "projectName": "Image",
-        "projectPath": "Z:\\00_REPOSITORY\\HES\\HES_625-1_Unit-tests\\TP\\TP01\\Image.csproj",
+        "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\TP01\\Image.csproj",
         "frameworks": {
           "net45": {
             "projectReferences": {}
@@ -19,21 +19,17 @@
         "net45": {}
       }
     },
-    "Z:\\00_REPOSITORY\\HES\\HES_625-1_Unit-tests\\TP\\TP2_ImageTest\\TP2_ImageTest.csproj": {
+    "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\TP2_ImageTest\\TP2_ImageTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\00_REPOSITORY\\HES\\HES_625-1_Unit-tests\\TP\\TP2_ImageTest\\TP2_ImageTest.csproj",
+        "projectUniqueName": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\TP2_ImageTest\\TP2_ImageTest.csproj",
         "projectName": "TP2_ImageTest",
-        "projectPath": "Z:\\00_REPOSITORY\\HES\\HES_625-1_Unit-tests\\TP\\TP2_ImageTest\\TP2_ImageTest.csproj",
-        "packagesPath": "C:\\Users\\albain.dufils\\.nuget\\packages\\",
-        "outputPath": "Z:\\00_REPOSITORY\\HES\\HES_625-1_Unit-tests\\TP\\TP2_ImageTest\\obj\\",
+        "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\TP2_ImageTest\\TP2_ImageTest.csproj",
+        "packagesPath": "C:\\Users\\Draguar\\.nuget\\packages\\",
+        "outputPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\TP2_ImageTest\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\albain.dufils\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Draguar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,14 +37,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "Z:\\00_REPOSITORY\\HES\\HES_625-1_Unit-tests\\TP\\TP01\\Image.csproj": {
-                "projectPath": "Z:\\00_REPOSITORY\\HES\\HES_625-1_Unit-tests\\TP\\TP01\\Image.csproj"
+              "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\TP01\\Image.csproj": {
+                "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\TP01\\Image.csproj"
               }
             }
           }
@@ -105,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
