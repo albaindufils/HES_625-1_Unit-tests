@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8arVNI2hg4AgkyqceFY7uQjNK0oJ0ghOCuxq9HPoZdMzRxTv2Nf7WWPtMEQ/2Y4yN9AP7zC4p08JfkyqZQPyCg==",
+  "dgSpecHash": "z8P2einOU3oN6jre3L6BqvlrKFudV7s12IO8h3z1Po28YlwlyY+1Mj0pPl3sgmo1TMmKvO0co9BnfEXqLYHXIA==",
   "success": true,
-  "projectFilePath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj",
+  "projectFilePath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Draguar\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Draguar\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"

@@ -10,6 +10,11 @@ namespace DTO
     public class Picture
     {
 
+        public Picture(string Name)
+        {
+            this.Name = Name;
+        }
+
         public string Name { get; set; }
 
         public string Path { get; set; }
@@ -20,8 +25,8 @@ namespace DTO
         {
             using (MemoryStream memoryStream = new MemoryStream())
             {
-                ImageBitmap.Save(memoryStream, ImageFormat.Bmp);
-                ImageByteArray = memoryStream.ToArray();
+                bmp.Save(memoryStream, ImageFormat.Bmp);
+                byte[] ImageByteArray = memoryStream.ToArray();
                 return ImageByteArray;
             }
         }

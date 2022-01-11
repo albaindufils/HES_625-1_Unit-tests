@@ -16,9 +16,9 @@ namespace WinForms_TestDoble
         private Bitmap resultBitmap = null;
         private int SelectedRGBFilterNbr = 3;
         private int SelectedEdgeMatrixFilterNbr = 3;
-        private List<Button> RGBFilterButtonsList = new List<Button>();
-        private List<Button> EdgeFilterButtonsList = new List<Button>();
-        private List<Button> AllFilterButtonsList = new List<Button>();
+        private List<Button> RGBFilterButtonsList = null;
+        private List<Button> EdgeFilterButtonsList = null;
+        private List<Button> AllFilterButtonsList = null;
 
 
         public FormImageEdge()
@@ -60,9 +60,10 @@ namespace WinForms_TestDoble
                     resultBitmap = null;
                 }
 
+                InitForm();
+
                 resultBitmap = originalBitmap;
 
-                InitForm();
 
             }
         }
@@ -137,6 +138,7 @@ namespace WinForms_TestDoble
 
         private List<Button> InitAllFilterButtonsList()
         {
+            AllFilterButtonsList = new List<Button>();
 
             AllFilterButtonsList.AddRange(InitFilterButtonsList(GetRGBFilterButtonsList()));
             AllFilterButtonsList.AddRange(InitFilterButtonsList(GetEdgeFilterButtonsList()));
@@ -146,17 +148,25 @@ namespace WinForms_TestDoble
 
         private List<Button> GetRGBFilterButtonsList()
         {
+            RGBFilterButtonsList = new List<Button>();
+
             RGBFilterButtonsList.Add(RGBFilterButton0);
             RGBFilterButtonsList.Add(RGBFilterButton1);
             RGBFilterButtonsList.Add(RGBFilterButton2);
             RGBFilterButtonsList.Add(RGBFilterButton3);
             RGBFilterButtonsList.Add(RGBFilterButton4);
 
+            //foreach (Button button in RGBFilterButtonsList)
+            //    button.Visible = true;
+
             return RGBFilterButtonsList;
         }
 
         private List<Button> GetEdgeFilterButtonsList()
-        {
+        { 
+
+            EdgeFilterButtonsList = new List<Button>();
+
             EdgeFilterButtonsList.Add(EdgeFilterbutton0);
             EdgeFilterButtonsList.Add(EdgeFilterbutton1);
             EdgeFilterButtonsList.Add(EdgeFilterbutton2);
@@ -168,7 +178,10 @@ namespace WinForms_TestDoble
         private void InitForm()
         {
             InitAllFilterButtonsList();
+            RGBFiltersPanel.Visible = true;
             EdgeFiltersPanel.Visible = false;
+            SelectedEdgeMatrixFilterNbr = 3;
+            SelectedRGBFilterNbr = 3;
         }
 
         private void RGBFilterButton0_Click(object sender, EventArgs e)

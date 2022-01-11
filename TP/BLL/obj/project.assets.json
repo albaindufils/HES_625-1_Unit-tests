@@ -128,11 +128,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj",
+      "projectUniqueName": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj",
+      "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\Draguar\\.nuget\\packages\\",
-      "outputPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\BLL\\obj\\",
+      "outputPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Draguar\\AppData\\Roaming\\NuGet\\NuGet.Config",

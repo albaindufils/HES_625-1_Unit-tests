@@ -44,30 +44,6 @@
             "rid": "win"
           }
         }
-      },
-      "System.Memory/4.5.4": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.1/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.1/_._": {}
-        }
-      },
-      "System.Resources.Extensions/6.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Memory": "4.5.4"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Resources.Extensions.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Resources.Extensions.dll": {}
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        }
       }
     }
   },
@@ -139,59 +115,11 @@
         "system.drawing.common.nuspec",
         "useSharedDesignerContext.txt"
       ]
-    },
-    "System.Memory/4.5.4": {
-      "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
-      "type": "package",
-      "path": "system.memory/4.5.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/System.Memory.dll",
-        "lib/net461/System.Memory.xml",
-        "lib/netcoreapp2.1/_._",
-        "lib/netstandard1.1/System.Memory.dll",
-        "lib/netstandard1.1/System.Memory.xml",
-        "lib/netstandard2.0/System.Memory.dll",
-        "lib/netstandard2.0/System.Memory.xml",
-        "ref/netcoreapp2.1/_._",
-        "system.memory.4.5.4.nupkg.sha512",
-        "system.memory.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Resources.Extensions/6.0.0": {
-      "sha512": "pBnVzNQYd0OHqh0VLu/hi0zFOTtyF8QwtziQBmzX/ZtVOea4+JEVOGu29DHeSOA0a9SFrYjQorBrOLuKLhcMNQ==",
-      "type": "package",
-      "path": "system.resources.extensions/6.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/System.Resources.Extensions.targets",
-        "buildTransitive/netcoreapp2.0/System.Resources.Extensions.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Resources.Extensions.dll",
-        "lib/net461/System.Resources.Extensions.xml",
-        "lib/net6.0/System.Resources.Extensions.dll",
-        "lib/net6.0/System.Resources.Extensions.xml",
-        "lib/netstandard2.0/System.Resources.Extensions.dll",
-        "lib/netstandard2.0/System.Resources.Extensions.xml",
-        "system.resources.extensions.6.0.0.nupkg.sha512",
-        "system.resources.extensions.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "System.Drawing.Common >= 6.0.0",
-      "System.Resources.Extensions >= 6.0.0"
+      "System.Drawing.Common >= 6.0.0"
     ]
   },
   "packageFolders": {
@@ -200,11 +128,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\DTO\\DTO.csproj",
+      "projectUniqueName": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DTO\\DTO.csproj",
       "projectName": "DTO",
-      "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\DTO\\DTO.csproj",
+      "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DTO\\DTO.csproj",
       "packagesPath": "C:\\Users\\Draguar\\.nuget\\packages\\",
-      "outputPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\DTO\\obj\\",
+      "outputPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DTO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Draguar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -234,10 +162,6 @@
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "System.Drawing.Common": {
-            "target": "Package",
-            "version": "[6.0.0, )"
-          },
-          "System.Resources.Extensions": {
             "target": "Package",
             "version": "[6.0.0, )"
           }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\WinForms_TestDoble\\WinForms_TestDoble.csproj": {}
+    "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\WinForms_TestDoble\\WinForms_TestDoble.csproj": {}
   },
   "projects": {
-    "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj": {
+    "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj",
+        "projectUniqueName": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj",
+        "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\Draguar\\.nuget\\packages\\",
-        "outputPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\BLL\\obj\\",
+        "outputPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Draguar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -64,14 +64,14 @@
         }
       }
     },
-    "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\WinForms_TestDoble\\WinForms_TestDoble.csproj": {
+    "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\WinForms_TestDoble\\WinForms_TestDoble.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\WinForms_TestDoble\\WinForms_TestDoble.csproj",
+        "projectUniqueName": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\WinForms_TestDoble\\WinForms_TestDoble.csproj",
         "projectName": "WinForms_TestDoble",
-        "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\WinForms_TestDoble\\WinForms_TestDoble.csproj",
+        "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\WinForms_TestDoble\\WinForms_TestDoble.csproj",
         "packagesPath": "C:\\Users\\Draguar\\.nuget\\packages\\",
-        "outputPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\WinForms_TestDoble\\obj\\",
+        "outputPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\WinForms_TestDoble\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Draguar\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -88,8 +88,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj": {
-                "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj"
+              "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj": {
+                "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\BLL\\BLL.csproj"
               }
             }
           }

@@ -1,13 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Vu3vwcfO48jspKnh8Qd+5kmIzmKQA/A6++eoPUnaVdaxQR48IVWp99jjteUZjuiZLHDwcPQIbU/Ne2BLlbEToQ==",
+  "dgSpecHash": "uqX3SmU+ZmqV/Tmwc0Y63Ei9EHrdRCWAXBv/dWB6LEA2iZxdxzOeGYQ5Aw36LAym1vc+dglJoqKlGu4L2/kAug==",
   "success": true,
-  "projectFilePath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\DTO\\DTO.csproj",
+  "projectFilePath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DTO\\DTO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Draguar\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
-    "C:\\Users\\Draguar\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
-    "C:\\Users\\Draguar\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\Draguar\\.nuget\\packages\\system.resources.extensions\\6.0.0\\system.resources.extensions.6.0.0.nupkg.sha512"
+    "C:\\Users\\Draguar\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

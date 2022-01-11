@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fDiJQr5ucaYoRiGYDoSuBc40pgqKaRYugWtYQXPCkZq0/qUN/p2X8V/iWt1WxtUE7opceJasRI9Vqczf7lj4fw==",
+  "dgSpecHash": "kcL8q2ZDm+S/fZSBg28TQxfxo1eK4SdXYzrC8tAyjsW5nnU30/ndsQSKPKEW7iqy6nWRg7daSRFWO7eOASplgg==",
   "success": true,
-  "projectFilePath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Projet2_Test\\HES_625-1_Unit-tests\\TP\\TP2_ImageTest\\TP2_ImageTest.csproj",
+  "projectFilePath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\TP2_ImageTest\\TP2_ImageTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Draguar\\.nuget\\packages\\coverlet.collector\\3.0.3\\coverlet.collector.3.0.3.nupkg.sha512",
     "C:\\Users\\Draguar\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
