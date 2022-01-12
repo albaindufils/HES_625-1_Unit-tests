@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DTO": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

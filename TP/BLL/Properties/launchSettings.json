@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "BLL": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}

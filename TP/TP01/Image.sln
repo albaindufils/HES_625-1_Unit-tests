@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BLL", "..\BLL\BLL.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinForms_TestDoble", "..\WinForms_TestDoble\WinForms_TestDoble.csproj", "{1E9631FA-3295-47E0-BBD3-6D9F205CC93E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "..\DTO\DTO.csproj", "{A6BF32A9-0157-4CD4-B672-EE6E9274DA45}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DTO", "..\DTO\DTO.csproj", "{A6BF32A9-0157-4CD4-B672-EE6E9274DA45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestDoble_MVC", "..\TestDoble_MVC\TestDoble_MVC.csproj", "{2ED82CAB-905E-4CF0-A46A-791C4FEFEA2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "..\DAL\DAL.csproj", "{A259B29B-0E63-405B-99D5-872339BCE558}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{A6BF32A9-0157-4CD4-B672-EE6E9274DA45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6BF32A9-0157-4CD4-B672-EE6E9274DA45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6BF32A9-0157-4CD4-B672-EE6E9274DA45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ED82CAB-905E-4CF0-A46A-791C4FEFEA2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ED82CAB-905E-4CF0-A46A-791C4FEFEA2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ED82CAB-905E-4CF0-A46A-791C4FEFEA2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ED82CAB-905E-4CF0-A46A-791C4FEFEA2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A259B29B-0E63-405B-99D5-872339BCE558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A259B29B-0E63-405B-99D5-872339BCE558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A259B29B-0E63-405B-99D5-872339BCE558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A259B29B-0E63-405B-99D5-872339BCE558}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

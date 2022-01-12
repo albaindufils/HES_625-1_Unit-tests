@@ -9,17 +9,33 @@ namespace DTO
 {
     public class Picture
     {
+        private string name;
+        private string path;
+        private List<string> appliedFIlters = new List<string>();
 
+        public Picture() { }
         public Picture(string Name)
         {
-            this.Name = Name;
+            name = Name;
         }
 
-        public string Name { get; set; }
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
 
-        public string Path { get; set; }
+        public string Path 
+        {
+            get { return path; }
+            set { path = value; }
+        }
 
-        public List<string> AppliedFilter { get; set; }
+        public List<string> AppliedFilters 
+        {
+            get { return appliedFIlters; }
+            set { appliedFIlters = value; }
+        }
 
         public byte[] ImageByteArray (Bitmap bmp)
         {

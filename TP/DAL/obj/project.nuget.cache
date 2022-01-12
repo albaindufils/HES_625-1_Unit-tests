@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "r7hW4/VdsbzrD0cdFVskwPhZuEY0hcSDGsNf6sF4HzvKFhbmLmKsILK/Jl2/SNCmgHGEnjmeBg5UOEpmHJ6JlA==",
+  "success": true,
+  "projectFilePath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DAL\\DAL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Draguar\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Draguar\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

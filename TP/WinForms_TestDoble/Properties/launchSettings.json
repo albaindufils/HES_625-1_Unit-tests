@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WinForms_TestDoble": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
