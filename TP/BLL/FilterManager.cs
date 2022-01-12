@@ -68,6 +68,8 @@ namespace BLL
 
             try
             {
+                Bitmap imageForFilter = sourceBitmap;
+
                 foreach (IFilterRGB item in RGBFiltersList)
                 {
                     if (item != null)
@@ -84,15 +86,12 @@ namespace BLL
                     else FilteredImage = sourceBitmap;
                 }
             }
-            catch (ArgumentNullException e1)
+            catch (Exception e1)
             {
                 Console.WriteLine(e1);
 
             }
-            catch (InvalidOperationException e2)
-            {
-                Console.WriteLine(e2);
-            }
+            
 
             return FilteredImage;
         }
@@ -104,6 +103,8 @@ namespace BLL
 
             try
             {
+                Bitmap imageForFilter = new Bitmap (sourceBitmap);
+
                 foreach (IFilterEdgeMatrix item in EdgeMatrixFilterList)
                 {
                     if (item != null)
@@ -117,19 +118,17 @@ namespace BLL
                             return FilteredImage;
                         }
                     }
+                    else FilteredImage = sourceBitmap;
                 }
             }
-            catch (ArgumentNullException e1)
+            catch (Exception e1)
             {
                 Console.WriteLine(e1);
 
             }
-            catch (InvalidOperationException e2)
-            {
-                Console.WriteLine(e2);
-            }
 
-            return sourceBitmap;
+
+            return FilteredImage;
         }
 
         public Bitmap ApplyFilter(Bitmap bmp, string FilterName)

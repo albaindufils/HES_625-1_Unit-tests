@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 
 namespace BLL.EdgeMatrix
 {
-    public class FilterMatrix : IFilterMatrix
+    public class FilterMatrix
     {
         public static double[,] Sobel3x3Horizontal
         {

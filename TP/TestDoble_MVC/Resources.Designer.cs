@@ -73,6 +73,16 @@ namespace TestDoble_MVC {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kirsch_leaf {
+            get {
+                object obj = ResourceManager.GetObject("kirsch_leaf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap laplacian3x3_leaf {
             get {
                 object obj = ResourceManager.GetObject("laplacian3x3_leaf", resourceCulture);

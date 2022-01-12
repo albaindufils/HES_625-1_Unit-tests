@@ -2,7 +2,7 @@
 
 namespace BLL.EdgeMatrix
 {
-    class PrewittFilter : FilterEdgeMatrix
+    public class PrewittFilter : FilterEdgeMatrix
     {
         public PrewittFilter()
         {
@@ -12,8 +12,8 @@ namespace BLL.EdgeMatrix
         public override Bitmap ApplyEdgeMatrixFilter(Bitmap sourceBitmap)
         {
             Bitmap resultBitmap = ConvolutionFilter(sourceBitmap,
-                                                            FilterMatrix.Sobel3x3Horizontal,
-                                                              FilterMatrix.Sobel3x3Vertical,
+                                                            FilterMatrix.Prewitt3x3Horizontal,
+                                                              FilterMatrix.Prewitt3x3Vertical,
                                                                    1.0, 0, true);
             return resultBitmap;
         }

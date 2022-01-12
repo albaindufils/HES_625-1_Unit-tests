@@ -91,6 +91,9 @@ namespace WinForms_TestDoble
                         imgFormat = ImageFormat.Jpeg;
                     }
 
+                    resultBitmap = new Bitmap(resultBitmap, new Size(originalBitmap.Width, originalBitmap.Height));
+
+
                     StreamWriter streamWriter = new StreamWriter(sfd.FileName, false);
                     resultBitmap.Save(streamWriter.BaseStream, imgFormat);
                     streamWriter.Flush();

@@ -2,7 +2,7 @@
 
 namespace BLL.EdgeMatrix
 {
-    class Sobel3x3Filter : FilterEdgeMatrix
+    public class Sobel3x3Filter : FilterEdgeMatrix
     {
         public Sobel3x3Filter()
         {

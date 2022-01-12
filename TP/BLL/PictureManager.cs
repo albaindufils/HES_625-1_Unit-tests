@@ -8,7 +8,7 @@ namespace BLL
     public class PictureManager
     {
 		private readonly IPictureRepository PictureRepository;
-		public ICollection<string> errorListAppliedFilter = null;
+		public ICollection<string> errorListAppliedFilter = new List<string>();
 		private TimeSpan maxAllowedDuration = TimeSpan.FromSeconds(3);
 
 
@@ -39,37 +39,9 @@ namespace BLL
 			}
 			catch (Exception)
 			{
-				if(errorListAppliedFilter == null)
-                {
 					errorListAppliedFilter = new List<string>();
 					errorListAppliedFilter.Add("List null passant par Try/catch");
-				}
 			}
-
-			//try
-			//{
-			//	img = PictureRepository.GetById(pictureName);
-
-			//	//errorListAppliedFilter = new List<string>();
-			//	errorListAppliedFilter = img.AppliedFilters;
-
-			//	if (errorListAppliedFilter.Count > 0)
-			//		return false;
-			//}
-			//catch (Exception e)
-			//{
-			//	if (img == null)
-			//	{
-			//		Console.WriteLine("This picture does not exist !");
-			//		return true;
-			//	}
-
-			//	if(errorListAppliedFilter == null)
-   //             {
-			//		errorListAppliedFilter = new List<string>();
-			//		errorListAppliedFilter.Add("List null passant par Try/catch");
-			//	}
-			//}
 
 			return true;
 		}

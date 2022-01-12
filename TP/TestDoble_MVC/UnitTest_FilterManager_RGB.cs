@@ -1,31 +1,24 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Drawing;
-using NSubstitute;
-using BLL;
 using BLL.FilterRGB;
-using BLL.EdgeMatrix;
-using DAL;
-using DTO;
 using System.Collections.Generic;
+
+
 
 namespace TestDoble_MVC
 {
     [TestClass]
-    public class UnitTest_FilterManager
+    public class UnitTest_FilterManager_RGB
     {
-
         static readonly int NUMBER_PIXEL_TEST = 1000;
         static readonly Bitmap originalImage = new Bitmap(Resources.leaf);
         static readonly Bitmap refSwapImage = new Bitmap(Resources.swap_leaf);
         static readonly Bitmap refBlackWhiteImage = new Bitmap(Resources.black_white_leaf);
         static readonly Bitmap refMegaGreenImage = new Bitmap(Resources.megaGreen_leaf);
         static readonly Bitmap refMyImage = new Bitmap(Resources.my_leaf);
-        static readonly Bitmap refSobelImage = new Bitmap(Resources.sobel3x3_leaf);
-        static readonly Bitmap refPrewittImage = new Bitmap(Resources.prewitt3x3_leaf);
-        static readonly Bitmap refLaplacianImage = new Bitmap(Resources.laplacian3x3_leaf);
         static readonly Bitmap NullImage = null;
-
+        private TestsTools Tools = new TestsTools();
 
         //[TestCleanup]
         //public void FilterTestCleanup()
@@ -39,16 +32,14 @@ namespace TestDoble_MVC
         //    originalImage = new Bitmap(Resources.leaf);
         //}
 
-        [TestMethod]
+        [TestInitialize()]
+         //[TestMethod]
         public void TestClassTestVariable()
         {
             Assert.IsNotNull(originalImage);
             Assert.IsNotNull(refSwapImage);
             Assert.IsNotNull(refBlackWhiteImage);
             Assert.IsNotNull(refMegaGreenImage);
-            Assert.IsNotNull(refSobelImage);
-            Assert.IsNotNull(refPrewittImage);
-            Assert.IsNotNull(refLaplacianImage);
             Assert.IsNull(NullImage);
         }
 
@@ -148,17 +139,6 @@ namespace TestDoble_MVC
             Assert.IsNotNull(refSwapImage);
         }
 
-        [TestMethod]
-        public void TestResultOFFilterSwap()
-        {
-            Console.WriteLine("TestResultOFFilterSwap");
-
-            // Apply filter Swap
-            Bitmap ResultImage = SwapFilter().Filter(originalImage);
-
-            TestImageResultWithRandomPixel(ResultImage, refSwapImage);
-        }
-
         //Test My filter
         [TestMethod]
         public void TestNotNullRefImageAndResultImageWithFilterMy()
@@ -170,17 +150,6 @@ namespace TestDoble_MVC
 
             Assert.IsNotNull(ResultImage);
             Assert.IsNotNull(refMyImage);
-        }
-
-        [TestMethod]
-        public void TestResultOFFilterMy()
-        {
-            Console.WriteLine("TestResultOFFilterMy");
-
-            // Apply filter My
-            Bitmap ResultImage = MyFilter().Filter(originalImage);
-
-            TestImageResultWithRandomPixel(ResultImage, refMyImage);
         }
 
         //Test MegaGreen filter
@@ -196,16 +165,6 @@ namespace TestDoble_MVC
             Assert.IsNotNull(refMegaGreenImage);
         }
 
-        [TestMethod]
-        public void TestResultOFFilterMegGreen()
-        {
-            Console.WriteLine("TestResultOFFilterMegGreen");
-
-            // Apply filter Swap
-            Bitmap ResultImage = MegaGreenFilter().Filter(originalImage);
-
-            TestImageResultWithRandomPixel(ResultImage, refMegaGreenImage);
-        }
 
         // Tests FilterManager
         [TestMethod]
@@ -213,11 +172,11 @@ namespace TestDoble_MVC
         {
             Console.WriteLine("TestFilterManagerIsNotNull");
 
-            Assert.IsNotNull(FilterManager());
+            Assert.IsNotNull(Tools.FilterManager());
         }
 
         [TestMethod]
-        public void TestFilterManagerRGBList()
+        public void TestFilterManagerRGBList_OK()
         {
             Console.WriteLine("TestFilterManagerRGBList");
 
@@ -227,7 +186,7 @@ namespace TestDoble_MVC
             try
             {
                filterList = new List<IFilterRGB>();
-               filterList = FilterManager().getFilterRGBList();
+               filterList = Tools.FilterManager().getFilterRGBList();
             }
             catch
             {
@@ -239,17 +198,16 @@ namespace TestDoble_MVC
         }
 
         [TestMethod]
-        public void TestFilterManagerEdgeFilterList()
+        public void TestFilterManagerRGBList_KO()
         {
-            Console.WriteLine("TestFilterManagerEdgeFilterList");
+            Console.WriteLine("TestFilterManagerRGBList");
 
-            List<IFilterEdgeMatrix> filterList = null;
+            List<IFilterRGB> filterList = null;
 
             //Exec FiltersList evaluation
             try
             {
-                filterList = new List<IFilterEdgeMatrix>();
-                filterList = FilterManager().getEdgeMatrixFilterList();
+                filterList = getNullListIFilterRGB();
             }
             catch
             {
@@ -257,8 +215,7 @@ namespace TestDoble_MVC
             }
 
             //FiltersList isNotNull evaluation
-            Assert.IsNotNull(filterList);
-
+            Assert.IsNull(filterList);
         }
 
         [TestMethod]
@@ -267,107 +224,91 @@ namespace TestDoble_MVC
             Console.WriteLine("TestFilterManagerGetFilterRGB");
 
             int RankInList = 2;
-            List<IFilterRGB> FilterList = FilterManager().getFilterRGBList();
+            List<IFilterRGB> FilterList = Tools.FilterManager().getFilterRGBList();
 
             if (FilterList == null)
             {
                 Assert.IsNotNull(false);
             }
 
-            Assert.AreEqual(FilterManager().GetFilterRGB(RankInList).Name, FilterList[2].Name);
-            Assert.AreEqual(FilterManager().GetFilterRGB(RankInList).GetType(), FilterList[2].GetType());
+            Assert.AreEqual(Tools.FilterManager().GetFilterRGB(RankInList).Name, FilterList[2].Name);
+            Assert.AreEqual(Tools.FilterManager().GetFilterRGB(RankInList).GetType(), FilterList[2].GetType());
         }
 
         [TestMethod]
-        public void TestFilterManagerGetFilterEdgeMatrix()
+        public void TestFilterManagerApplyRGBFilter_OK()
         {
-            Console.WriteLine("TestFilterManagerGetFilterEdgeMatrix");
-
-            int RankInList = 2;
-            List<IFilterEdgeMatrix> FilterList = FilterManager().getEdgeMatrixFilterList();
-
-            if(FilterList == null)
-            {
-                Assert.IsNotNull(false);
-            }
-
-            Assert.AreEqual(FilterManager().GetFilteEdge(RankInList).Name, FilterList[2].Name);
-            Assert.AreEqual(FilterManager().GetFilteEdge(RankInList).GetType(), FilterList[2].GetType());
-        }
-
-        [TestMethod]
-        public void TestFilterManagerApplyRGBFilter()
-        {
-            Console.WriteLine("TestFilterManagerApplyRGBFilter");
+            Console.WriteLine("TestFilterManagerApplyRGBFilter_OK");
 
             string FilterName = "My";
             
-            Bitmap ResultImage = FilterManager().ApplyFilter(originalImage, FilterName);
+            Bitmap ResultImage = Tools.FilterManager().ApplyFilter(originalImage, FilterName);
 
-            TestImageResultWithRandomPixel(ResultImage, refMyImage);
+            Tools.TestImageResultWithRandomPixel(ResultImage, refMyImage);
         }
 
         [TestMethod]
-        public void TestFilterManagerApplyEgdeFilter()
+        public void TestFilterManagerApplyRGBFilter_KO()
         {
-            Console.WriteLine("TestFilterManagerApplyEgdeFilter");
+            Console.WriteLine("TestFilterManagerApplyRGBFilter_KO");
 
-            string FilterName = "MegaGreen";
+            string FilterName = "NoFilterHere";
 
-            Bitmap ResultImage = FilterManager().ApplyFilter(originalImage, FilterName);
+            Bitmap ResultImage = Tools.FilterManager().ApplyFilter(originalImage, FilterName);
 
-            TestImageResultWithRandomPixel(ResultImage, refMegaGreenImage);
+            Tools.TestImageResultWithRandomPixel(ResultImage, originalImage);
+        }
 
+        [TestMethod]
+        public void TestCatchFilterManagerApplyRGBFilter()
+        {
+            Console.WriteLine("TestCatchFilterManagerApplyRGBFilter");
+
+            Bitmap ResultImage = null;
+            string FilterName = null;
+
+            try
+            {
+                ResultImage = new Bitmap("");
+                ResultImage = Tools.FilterManager().ApplyFilter(originalImage, FilterName);
+            }
+            catch
+            {
+                //Assert.Fail("Catch from FilterManager.FilterRGBApplying is functionnal");
+                Assert.IsNull(ResultImage);
+
+            }
+
+            Assert.IsTrue(true);
         }
 
         // Methods for Tests
-        public IFilterRGB SwapFilter()
+        private IFilterRGB SwapFilter()
         {
             return new ApplyFilterSwap();
         }
-        public IFilterRGB BlackWhiteFilter()
+        private IFilterRGB BlackWhiteFilter()
         {
             return new ApplyBlackAndWhiteFIlter();
         }
 
-        public ApplyBlackAndWhiteFIlter DirectClassBlackWhiteFilter()
+        private ApplyBlackAndWhiteFIlter DirectClassBlackWhiteFilter()
         {
             return new ApplyBlackAndWhiteFIlter();
         }
 
-        public IFilterRGB MegaGreenFilter()
+        private IFilterRGB MegaGreenFilter()
         {
             return new ApplyFilterMegaGreen();
         }
-        public IFilterRGB MyFilter()
+        private IFilterRGB MyFilter()
         {
             return new ApplyMyFilter();
         }
 
-        public IFilterManager FilterManager()
+        public List<IFilterRGB> getNullListIFilterRGB()
         {
-            return new FilterManager();
-        }
-
-        public void TestImageResultWithRandomPixel(Bitmap ResultImage, Bitmap RefImage)
-        {
-            Console.WriteLine("TestImageResultWithRandomPixel");
-
-            Random rnd = new Random();
-
-            //control size and Type of image
-            Assert.AreEqual(RefImage.Size, ResultImage.Size);
-            Assert.AreEqual(RefImage.GetType(), ResultImage.GetType());
-
-            // Control x pixels randomly
-            for (int i = 0; i < NUMBER_PIXEL_TEST; i++)
-            {
-                var randX = rnd.Next(1, ResultImage.Width - 1);
-                var randY = rnd.Next(1, ResultImage.Height - 1);
-                Console.WriteLine("Test for pixel x: " + randX + ", y: " + randY);
-                // Test image generated with manually generated B&W
-                Assert.AreEqual(ResultImage.GetPixel(randX, randY), RefImage.GetPixel(randX, randY));
-            }
+            return null;
         }
 
     }

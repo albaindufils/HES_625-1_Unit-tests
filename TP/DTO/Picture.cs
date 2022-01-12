@@ -37,15 +37,5 @@ namespace DTO
             set { appliedFIlters = value; }
         }
 
-        public byte[] ImageByteArray (Bitmap bmp)
-        {
-            using (MemoryStream memoryStream = new MemoryStream())
-            {
-                bmp.Save(memoryStream, ImageFormat.Bmp);
-                byte[] ImageByteArray = memoryStream.ToArray();
-                return ImageByteArray;
-            }
-        }
-
     }
 }
