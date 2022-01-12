@@ -133,11 +133,11 @@
   <data name="my_leaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\my_leaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="prewitt3x3horizontal_leaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\prewitt3x3horizontal_leaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="prewitt3x3_leaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\prewitt3x3_leaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sobel3x3horizontal_leaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>resources\sobel3x3horizontal_leaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="sobel3x3_leaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\sobel3x3_leaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="swap_leaf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>resources\swap_leaf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

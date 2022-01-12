@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using NSubstitute;
 using BLL;
@@ -9,7 +8,7 @@ using WinForms_TestDoble;
 namespace TestDoble_MVC
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitTest_PictureManager
     {
         public static Picture CreateEmptyPicture()
         {
@@ -57,7 +56,6 @@ namespace TestDoble_MVC
         {
             var pictureRepository = Substitute.For<IPictureRepository>();
             Picture img = CreateNullPicture();
-            //Picture img = null;
             PictureManager testPictureManager = new PictureManager(pictureRepository);
 
             //Returns a null picture

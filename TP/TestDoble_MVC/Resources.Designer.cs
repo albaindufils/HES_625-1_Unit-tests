@@ -113,9 +113,9 @@ namespace TestDoble_MVC {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap prewitt3x3horizontal_leaf {
+        internal static System.Drawing.Bitmap prewitt3x3_leaf {
             get {
-                object obj = ResourceManager.GetObject("prewitt3x3horizontal_leaf", resourceCulture);
+                object obj = ResourceManager.GetObject("prewitt3x3_leaf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +123,9 @@ namespace TestDoble_MVC {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sobel3x3horizontal_leaf {
+        internal static System.Drawing.Bitmap sobel3x3_leaf {
             get {
-                object obj = ResourceManager.GetObject("sobel3x3horizontal_leaf", resourceCulture);
+                object obj = ResourceManager.GetObject("sobel3x3_leaf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

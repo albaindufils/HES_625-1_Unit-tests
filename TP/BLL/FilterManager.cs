@@ -13,10 +13,12 @@ namespace BLL
         private IFilterRGB FilterMegaGreen = new ApplyFilterMegaGreen();
         private IFilterRGB FilterBlackWhite = new ApplyBlackAndWhiteFIlter();
         private List<IFilterRGB> RGBFiltersList = null;
+
         private IFilterEdgeMatrix SobelFilter = new Sobel3x3Filter();
         private IFilterEdgeMatrix KirschFilter = new KirschFilter();
         private IFilterEdgeMatrix PrewittFilter = new PrewittFilter();
         private List<IFilterEdgeMatrix> EdgeMatrixFilterList = null;
+
         private List <Object> AllFiltersList = new List <Object> ();
 
         public FilterManager()
