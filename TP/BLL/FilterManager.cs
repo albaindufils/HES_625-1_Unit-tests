@@ -103,8 +103,6 @@ namespace BLL
 
             try
             {
-                Bitmap imageForFilter = new Bitmap (sourceBitmap);
-
                 foreach (IFilterEdgeMatrix item in EdgeMatrixFilterList)
                 {
                     if (item != null)

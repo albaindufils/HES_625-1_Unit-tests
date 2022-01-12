@@ -107,7 +107,7 @@ namespace TestDoble_MVC
             //Exec FiltersList evaluation
             testPictureManager.AppliedListFilterIsEmpty("Good_Image");
 
-            Assert.IsTrue(testPictureManager.errorListAppliedFilter.Count == 0);
+            Assert.IsTrue(testPictureManager.ListAppliedFilter.Count == 0);
         }
 
         [TestMethod]
@@ -124,7 +124,28 @@ namespace TestDoble_MVC
             //Exec FiltersList evaluation
             testPictureManager.AppliedListFilterIsEmpty("Good_Image");
 
-            Assert.IsTrue(testPictureManager.errorListAppliedFilter.Count > 0);
+            Assert.IsTrue(testPictureManager.ListAppliedFilter.Count > 0);
         }
+
+        [TestMethod]
+        public void TestAddFilterInFilterList()
+        {
+            var pictureRepository = Substitute.For<IPictureRepository>();
+            Picture img = CreatePicture();
+
+            PictureManager testPictureManager = new PictureManager(pictureRepository);
+
+            //Returns a empty picture with empty filter List
+            pictureRepository.GetById("Good_Image").Returns<Picture>(img);
+
+            //Exec FiltersList evaluation
+            testPictureManager.AddInlistAppliedFilter("Good Filter in list");
+
+            Assert.IsTrue(testPictureManager.ListAppliedFilter.Count > 0);
+            Assert.IsTrue(img.AppliedFilters.Contains("Good Filter in list"));
+            Assert.IsTrue(testPictureManager.ListAppliedFilter.Contains("Good Filter in list"));
+            Assert.AreEqual(img.AppliedFilters.IndexOf("Good Filter in list"), testPictureManager.ListAppliedFilter.IndexOf("Good Filter in list"));
+        }
+
     }
 }

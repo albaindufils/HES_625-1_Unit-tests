@@ -270,7 +270,7 @@ namespace TestDoble_MVC
             try
             {
                 ResultImage = new Bitmap("");
-                ResultImage = Tools.FilterManager().ApplyFilter(originalImage, FilterName);
+                // ResultImage = Tools.FilterManager().ApplyFilter(originalImage, FilterName);
             }
             catch
             {

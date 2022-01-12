@@ -8,7 +8,7 @@ namespace BLL
     public class PictureManager
     {
 		private readonly IPictureRepository PictureRepository;
-		public ICollection<string> errorListAppliedFilter = new List<string>();
+		public List<string> ListAppliedFilter = new List<string>();
 		private TimeSpan maxAllowedDuration = TimeSpan.FromSeconds(3);
 
 
@@ -17,10 +17,16 @@ namespace BLL
 			this.PictureRepository = PictureRepository;
 		}
 
-		public ICollection<string> ErrorListAppliedFilter
+		public void AddInlistAppliedFilter (string FilterName)
 		{
-			get { return errorListAppliedFilter; }
-			set { errorListAppliedFilter = value; }
+			Picture img = new Picture();
+
+			ListAppliedFilter = img.AppliedFilters;
+
+			ListAppliedFilter.Add(FilterName);
+
+			img.AppliedFilters = ListAppliedFilter;
+
 		}
 
 		public bool AppliedListFilterIsEmpty(string pictureName)
@@ -31,16 +37,15 @@ namespace BLL
 			{
 				img = PictureRepository.GetById(pictureName);
 
-				errorListAppliedFilter = new List<string>();
-				errorListAppliedFilter = img.AppliedFilters;
+				ListAppliedFilter = new List<string>();
+				ListAppliedFilter = img.AppliedFilters;
 
-				if (errorListAppliedFilter.Count > 0)
+				if (ListAppliedFilter.Count > 0)
 					return false;
 			}
 			catch (Exception)
 			{
-					errorListAppliedFilter = new List<string>();
-					errorListAppliedFilter.Add("List null passant par Try/catch");
+				AddInlistAppliedFilter("List null passant par Try/catch");
 			}
 
 			return true;
