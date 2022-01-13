@@ -81,6 +81,7 @@ namespace TestDoble_MVC
         }
 
 
+
         // Tests FilterManager
         [TestMethod]
         public void TestFilterManagerIsNotNull()
@@ -88,6 +89,33 @@ namespace TestDoble_MVC
             Console.WriteLine("TestFilterManagerIsNotNull");
 
             Assert.IsNotNull(Tools.FilterManager());
+        }
+
+
+        [TestMethod]
+        public void TestFilterManagerApplyEdgeFilterBitmap_KO()
+        {
+            Console.WriteLine("TestFilterManagerApplyEdgeFilter_KO");
+
+            string FilterName = "BLL.EdgeMatrix";
+
+            Bitmap ResultImage = Tools.FilterManager().ApplyFilter(null, FilterName);
+
+            Assert.IsNotNull(ResultImage);
+            Assert.AreEqual(ResultImage.Width, 10);
+        }
+
+        [TestMethod]
+        public void TestFilterManagerApplyEdgeFilterFilter_KO()
+        {
+            Console.WriteLine("TestFilterManagerApplyEdgeFilter_KO");
+
+            string FilterName = "Sobel";
+
+            Bitmap ResultImage = Tools.FilterManager().ApplyFilter(null, FilterName);
+
+            Assert.IsNotNull(ResultImage);
+            Assert.AreEqual(ResultImage.Width, 10);
         }
 
         [TestMethod]
@@ -120,10 +148,6 @@ namespace TestDoble_MVC
             int RankInList = 2;
             List<IFilterEdgeMatrix> FilterList = Tools.FilterManager().getEdgeMatrixFilterList();
 
-            if (FilterList == null)
-            {
-                Assert.IsNotNull(false);
-            }
 
             Assert.AreEqual(Tools.FilterManager().GetFilteEdge(RankInList).Name, FilterList[2].Name);
             Assert.AreEqual(Tools.FilterManager().GetFilteEdge(RankInList).GetType(), FilterList[2].GetType());
@@ -173,7 +197,6 @@ namespace TestDoble_MVC
                 Assert.IsNull(ResultImage);
             }
 
-            Assert.IsFalse(false);
         }
 
         // Methods for Tests

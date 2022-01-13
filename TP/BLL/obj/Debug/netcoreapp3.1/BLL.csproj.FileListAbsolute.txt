@@ -33,3 +33,18 @@ D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Alb
 D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Albain\HES_625-1_Unit-tests\TP\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete
 D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Albain\HES_625-1_Unit-tests\TP\BLL\obj\Debug\netcoreapp3.1\BLL.dll
 D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Albain\HES_625-1_Unit-tests\TP\BLL\obj\Debug\netcoreapp3.1\BLL.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\bin\Debug\netcoreapp3.1\BLL.deps.json
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\bin\Debug\netcoreapp3.1\BLL.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\bin\Debug\netcoreapp3.1\BLL.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\bin\Debug\netcoreapp3.1\DAL.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\bin\Debug\netcoreapp3.1\DTO.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\bin\Debug\netcoreapp3.1\DAL.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\bin\Debug\netcoreapp3.1\DTO.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.AssemblyReference.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\obj\Debug\netcoreapp3.1\BLL.GeneratedMSBuildEditorConfig.editorconfig
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfoInputs.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\obj\Debug\netcoreapp3.1\BLL.AssemblyInfo.cs
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CoreCompileInputs.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\obj\Debug\netcoreapp3.1\BLL.csproj.CopyComplete
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\obj\Debug\netcoreapp3.1\BLL.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\BLL\obj\Debug\netcoreapp3.1\BLL.pdb

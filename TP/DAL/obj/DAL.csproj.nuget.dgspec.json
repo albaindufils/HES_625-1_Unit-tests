@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DAL\\DAL.csproj": {}
+    "Z:\\00_REPOSITORY\\HES\\unit-test-project\\TP\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DAL\\DAL.csproj": {
+    "Z:\\00_REPOSITORY\\HES\\unit-test-project\\TP\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DAL\\DAL.csproj",
+        "projectUniqueName": "Z:\\00_REPOSITORY\\HES\\unit-test-project\\TP\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\Draguar\\.nuget\\packages\\",
-        "outputPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DAL\\obj\\",
+        "projectPath": "Z:\\00_REPOSITORY\\HES\\unit-test-project\\TP\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\albain.dufils\\.nuget\\packages\\",
+        "outputPath": "Z:\\00_REPOSITORY\\HES\\unit-test-project\\TP\\DAL\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Draguar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\albain.dufils\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DTO\\DTO.csproj": {
-                "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DTO\\DTO.csproj"
+              "Z:\\00_REPOSITORY\\HES\\unit-test-project\\TP\\DTO\\DTO.csproj": {
+                "projectPath": "Z:\\00_REPOSITORY\\HES\\unit-test-project\\TP\\DTO\\DTO.csproj"
               }
             }
           }
@@ -58,21 +62,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DTO\\DTO.csproj": {
+    "Z:\\00_REPOSITORY\\HES\\unit-test-project\\TP\\DTO\\DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DTO\\DTO.csproj",
+        "projectUniqueName": "Z:\\00_REPOSITORY\\HES\\unit-test-project\\TP\\DTO\\DTO.csproj",
         "projectName": "DTO",
-        "projectPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DTO\\DTO.csproj",
-        "packagesPath": "C:\\Users\\Draguar\\.nuget\\packages\\",
-        "outputPath": "D:\\Cours\\7eme semestre\\625_1_Software\\Software Test\\Projet Final\\Reposit_Git_Albain\\HES_625-1_Unit-tests\\TP\\DTO\\obj\\",
+        "projectPath": "Z:\\00_REPOSITORY\\HES\\unit-test-project\\TP\\DTO\\DTO.csproj",
+        "packagesPath": "C:\\Users\\albain.dufils\\.nuget\\packages\\",
+        "outputPath": "Z:\\00_REPOSITORY\\HES\\unit-test-project\\TP\\DTO\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Draguar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\albain.dufils\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,7 +88,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://nuget.org/api/v2/curated-feeds/microsoftdotnet/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -118,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
         }
       }
     }

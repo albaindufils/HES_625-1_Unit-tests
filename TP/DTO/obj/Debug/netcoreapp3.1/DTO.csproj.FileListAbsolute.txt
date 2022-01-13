@@ -8,3 +8,13 @@ D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Alb
 D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Albain\HES_625-1_Unit-tests\TP\DTO\bin\Debug\netcoreapp3.1\DTO.pdb
 D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Albain\HES_625-1_Unit-tests\TP\DTO\obj\Debug\netcoreapp3.1\DTO.dll
 D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Albain\HES_625-1_Unit-tests\TP\DTO\obj\Debug\netcoreapp3.1\DTO.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DTO\bin\Debug\netcoreapp3.1\DTO.deps.json
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DTO\bin\Debug\netcoreapp3.1\DTO.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DTO\bin\Debug\netcoreapp3.1\DTO.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.AssemblyReference.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DTO\obj\Debug\netcoreapp3.1\DTO.GeneratedMSBuildEditorConfig.editorconfig
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfoInputs.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DTO\obj\Debug\netcoreapp3.1\DTO.AssemblyInfo.cs
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DTO\obj\Debug\netcoreapp3.1\DTO.csproj.CoreCompileInputs.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DTO\obj\Debug\netcoreapp3.1\DTO.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DTO\obj\Debug\netcoreapp3.1\DTO.pdb

@@ -252,11 +252,22 @@ namespace TestDoble_MVC
         {
             Console.WriteLine("TestFilterManagerApplyRGBFilter_KO");
 
-            string FilterName = "NoFilterHere";
+            string FilterName = null;
 
             Bitmap ResultImage = Tools.FilterManager().ApplyFilter(originalImage, FilterName);
 
             Tools.TestImageResultWithRandomPixel(ResultImage, originalImage);
+        }
+
+        [TestMethod]
+        public void TestFilterManagerApplyRGBFilter_BitmapFilterName_KO()
+        {
+            Console.WriteLine("TestFilterManagerApplyRGBFilter_Bitmap_KO");
+
+            Bitmap ResultImage = Tools.FilterManager().ApplyFilter(null, null);
+
+            Assert.IsNotNull(ResultImage);
+            Assert.AreEqual(ResultImage.Width, 10);
         }
 
         [TestMethod]

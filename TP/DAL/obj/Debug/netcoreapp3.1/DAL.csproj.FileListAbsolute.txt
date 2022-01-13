@@ -11,3 +11,16 @@ D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Alb
 D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Albain\HES_625-1_Unit-tests\TP\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
 D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Albain\HES_625-1_Unit-tests\TP\DAL\obj\Debug\netcoreapp3.1\DAL.dll
 D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Albain\HES_625-1_Unit-tests\TP\DAL\obj\Debug\netcoreapp3.1\DAL.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DAL\bin\Debug\netcoreapp3.1\DAL.deps.json
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DAL\bin\Debug\netcoreapp3.1\DAL.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DAL\bin\Debug\netcoreapp3.1\DAL.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DAL\bin\Debug\netcoreapp3.1\DTO.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DAL\bin\Debug\netcoreapp3.1\DTO.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.AssemblyReference.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DAL\obj\Debug\netcoreapp3.1\DAL.GeneratedMSBuildEditorConfig.editorconfig
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfoInputs.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DAL\obj\Debug\netcoreapp3.1\DAL.AssemblyInfo.cs
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CoreCompileInputs.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DAL\obj\Debug\netcoreapp3.1\DAL.csproj.CopyComplete
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DAL\obj\Debug\netcoreapp3.1\DAL.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\DAL\obj\Debug\netcoreapp3.1\DAL.pdb

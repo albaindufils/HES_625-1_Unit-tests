@@ -66,33 +66,24 @@ namespace BLL
             IFilterRGB FilterToApply = null;
             Bitmap FilteredImage = null;
 
-            try
-            {
-                Bitmap imageForFilter = sourceBitmap;
-
-                foreach (IFilterRGB item in RGBFiltersList)
-                {
-                    if (item != null)
-                    {
-                        if (FilterName.Equals(item.Name))
-                        {
-                            FilterToApply = item;
-
-                            FilteredImage = FilterToApply.Filter(sourceBitmap);
-
-                            return FilteredImage;
-                        }
-                    }
-                    else FilteredImage = sourceBitmap;
-                }
-            }
-            catch (Exception e1)
-            {
-                Console.WriteLine(e1);
-
-            }
             
+            Bitmap imageForFilter = sourceBitmap;
 
+            foreach (IFilterRGB item in RGBFiltersList)
+            {
+                if (item != null)
+                {
+                    if (FilterName.Equals(item.Name))
+                    {
+                        FilterToApply = item;
+
+                        FilteredImage = FilterToApply.Filter(sourceBitmap);
+
+                        return FilteredImage;
+                    }
+                }
+                else FilteredImage = sourceBitmap;
+            }
             return FilteredImage;
         }
 
@@ -101,31 +92,22 @@ namespace BLL
             IFilterEdgeMatrix FilterToApply = null;
             Bitmap FilteredImage = null;
 
-            try
+           
+            foreach (IFilterEdgeMatrix item in EdgeMatrixFilterList)
             {
-                foreach (IFilterEdgeMatrix item in EdgeMatrixFilterList)
+                if (item != null)
                 {
-                    if (item != null)
+                    if (FilterName.Equals(item.Name))
                     {
-                        if (FilterName.Equals(item.Name))
-                        {
-                            FilterToApply = item;
+                        FilterToApply = item;
 
-                            FilteredImage = FilterToApply.ApplyEdgeMatrixFilter(sourceBitmap);
+                        FilteredImage = FilterToApply.ApplyEdgeMatrixFilter(sourceBitmap);
 
-                            return FilteredImage;
-                        }
+                        return FilteredImage;
                     }
-                    else FilteredImage = sourceBitmap;
                 }
+                else FilteredImage = sourceBitmap;
             }
-            catch (Exception e1)
-            {
-                Console.WriteLine(e1);
-
-            }
-
-
             return FilteredImage;
         }
 
@@ -133,6 +115,13 @@ namespace BLL
         {
             Bitmap ImageResult = null;
             string FilterType;
+            if (FilterName == null) {
+                FilterName = "";
+            }
+            if (bmp == null)
+            {
+                bmp = new Bitmap(10,10);
+            }
 
             foreach (var item in AllFiltersList)
             {
@@ -152,6 +141,7 @@ namespace BLL
                         if (RGBFilter.Name.Contains(FilterName))
                         return FilterRGBApplying(bmp, FilterName);
                         break;
+
 
                     case "BLL.EdgeMatrix":
                         IFilterEdgeMatrix EdgeFilter = (IFilterEdgeMatrix)item;

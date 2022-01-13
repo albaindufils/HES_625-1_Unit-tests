@@ -101,18 +101,12 @@ namespace BLL.EdgeMatrix
 
                     if (blueTotal > 255)
                     { blueTotal = 255; }
-                    else if (blueTotal < 0)
-                    { blueTotal = 0; }
 
                     if (greenTotal > 255)
                     { greenTotal = 255; }
-                    else if (greenTotal < 0)
-                    { greenTotal = 0; }
 
                     if (redTotal > 255)
                     { redTotal = 255; }
-                    else if (redTotal < 0)
-                    { redTotal = 0; }
 
                     resultBuffer[byteOffset] = (byte)(blueTotal);
                     resultBuffer[byteOffset + 1] = (byte)(greenTotal);

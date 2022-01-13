@@ -181,8 +181,8 @@ namespace WinForms_TestDoble
         private void InitForm()
         {
             InitAllFilterButtonsList();
-            RGBFiltersPanel.Visible = true;
-            EdgeFiltersPanel.Visible = false;
+            RGBFiltersPanel.Enabled = true;
+            EdgeFiltersPanel.Enabled = false;
             SelectedEdgeMatrixFilterNbr = 3;
             SelectedRGBFilterNbr = 3;
         }
@@ -244,7 +244,7 @@ namespace WinForms_TestDoble
             bool RGBFilterAvailable = CheckNbrFilterAvailable(SelectedRGBFilterNbr);
             bool EdgeFilterAvailable = CheckNbrFilterAvailable(SelectedEdgeMatrixFilterNbr);
 
-            buttonSaveAs.Visible = true;
+            buttonSaveAs.Enabled = true;
 
             if (ButtonFilter.Name.Contains("RGB"))
             {
@@ -278,17 +278,17 @@ namespace WinForms_TestDoble
         {
             if (RGBFiltersAvailable)
             {
-                RGBFiltersPanel.Visible = true;
+                RGBFiltersPanel.Enabled = true;
             }
             else
-                RGBFiltersPanel.Visible = false;
+                RGBFiltersPanel.Enabled = false;
 
             if (EdgeFiltersAvailable)
             {
-                EdgeFiltersPanel.Visible = true;
+                EdgeFiltersPanel.Enabled = true;
             }
             else
-                EdgeFiltersPanel.Visible = false;
+                EdgeFiltersPanel.Enabled = false;
 
         }
 

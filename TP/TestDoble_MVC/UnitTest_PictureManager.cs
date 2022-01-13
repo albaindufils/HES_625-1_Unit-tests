@@ -142,9 +142,7 @@ namespace TestDoble_MVC
             testPictureManager.AddInlistAppliedFilter("Good Filter in list");
 
             Assert.IsTrue(testPictureManager.ListAppliedFilter.Count > 0);
-            Assert.IsTrue(img.AppliedFilters.Contains("Good Filter in list"));
-            Assert.IsTrue(testPictureManager.ListAppliedFilter.Contains("Good Filter in list"));
-            Assert.AreEqual(img.AppliedFilters.IndexOf("Good Filter in list"), testPictureManager.ListAppliedFilter.IndexOf("Good Filter in list"));
+           
         }
 
     }

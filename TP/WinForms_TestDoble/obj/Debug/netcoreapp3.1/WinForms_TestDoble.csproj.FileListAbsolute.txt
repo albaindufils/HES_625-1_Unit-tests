@@ -56,3 +56,32 @@ D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Alb
 D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Albain\HES_625-1_Unit-tests\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.dll
 D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Albain\HES_625-1_Unit-tests\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.pdb
 D:\Cours\7eme semestre\625_1_Software\Software Test\Projet Final\Reposit_Git_Albain\HES_625-1_Unit-tests\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.genruntimeconfig.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\WinForms_TestDoble.exe
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\WinForms_TestDoble.deps.json
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\WinForms_TestDoble.runtimeconfig.json
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\WinForms_TestDoble.runtimeconfig.dev.json
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\WinForms_TestDoble.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\WinForms_TestDoble.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\BLL.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\DAL.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\DTO.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\BLL.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\DAL.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\bin\Debug\netcoreapp3.1\DTO.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.csproj.AssemblyReference.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.FormImageEdge.resources
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.Resources.resources
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.csproj.GenerateResource.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.GeneratedMSBuildEditorConfig.editorconfig
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.AssemblyInfoInputs.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.AssemblyInfo.cs
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.csproj.CoreCompileInputs.cache
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.csproj.CopyComplete
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.dll
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.pdb
+Z:\00_REPOSITORY\HES\unit-test-project\TP\WinForms_TestDoble\obj\Debug\netcoreapp3.1\WinForms_TestDoble.genruntimeconfig.cache
